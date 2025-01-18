@@ -6,7 +6,7 @@ const Header: FC = () => {
     <header className="w-full p-4 bg-white shadow-md">
       <div className="flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold text-gray-800">
-          MOVIES
+          FILMILIST
         </Link>
         <nav>
           <ul className="flex gap-4">

@@ -2,7 +2,6 @@ import { FC, memo, useEffect } from "react";
 import ShowDetail from "../Components/ShowDetail";
 import { Link } from "react-router";
 import { IoArrowBack } from "react-icons/io5";
-import { Show } from "../models/Show";
 import withRouter, { WithRouterProps } from "../WithRouter";
 import { connect, ConnectedProps } from "react-redux";
 import { State } from "../store";
