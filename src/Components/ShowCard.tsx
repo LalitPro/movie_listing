@@ -11,11 +11,11 @@ const placeholderImage = "./defaultImage.png";
 const ShowCard: FC<ShowCardProps> = ({ show }) => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center overflow-hidden transition-shadow duration-200 bg-white border border-gray-200 rounded-lg shadow-lg max-w-56 hover:shadow-xl">
+      <div className="flex flex-col items-center justify-center h-auto overflow-hidden transition-shadow duration-200 bg-white border border-gray-200 rounded-lg shadow-lg max-w-72 hover:shadow-xl">
         <img
           src={show.image?.medium || show.image?.original || placeholderImage}
           alt={show.name}
-          className="object-cover w-full h-64"
+          className="object-cover w-full h-fit"
         />
         <Link to={"/show/" + show.id}>
           <div className="w-full p-4">

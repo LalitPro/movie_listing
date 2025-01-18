@@ -31,7 +31,7 @@ const ShowDetailsPage: FC<ShowDetailPageProps> = ({
       <Link className="flex items-center gap-2" to="/">
         <IoArrowBack /> Back
       </Link>
-      <div className="flex gap-8 px-20 py-10">
+      <div className="flex gap-8 px-3 py-10 sm:px-7 md:px-20">
         {show && <ShowDetail key={show.id} show={show} />}
       </div>
     </div>

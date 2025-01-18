@@ -11,7 +11,7 @@ const ShowDetail: FC<ShowDetailProps> = ({ show }) => {
   return (
     <div className="p-4">
       <div className="flex flex-col gap-8">
-        <div className="flex gap-8">
+        <div className="flex flex-col gap-8 md:flex-row">
           <img
             src={
               show.image?.medium || show.image?.original || "./defaultImage.png"

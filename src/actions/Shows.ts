@@ -1,4 +1,4 @@
-import { ActionCreator } from ".";
+import { ActionCreator } from "./index";
 import { Show } from "../models/Show";
 
 export const SHOWS_LOADED = "SHOWS_LOADED";
