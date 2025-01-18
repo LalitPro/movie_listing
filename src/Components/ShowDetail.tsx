@@ -17,7 +17,7 @@ const ShowDetail: FC<ShowDetailProps> = ({ show }) => {
               show.image?.medium || show.image?.original || "./defaultImage.png"
             }
             alt={show.name}
-            className="object-cover w-64 rounded-lg shadow-lg h-96"
+            className="self-center object-cover w-64 rounded-lg shadow-lg justify-self-center h-96"
           />
           <div className="flex flex-col gap-4">
             <h1 className="text-3xl font-bold text-gray-900">{show.name}</h1>
@@ -47,7 +47,7 @@ const ShowDetail: FC<ShowDetailProps> = ({ show }) => {
             ) : (
               <>
                 <h2 className="mb-4 text-2xl font-bold text-gray-900">Cast</h2>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap items-center justify-center gap-4">
                   {show.casts?.map((cast: any) => (
                     <CastCard key={cast.person.name} cast={cast} />
                   ))}

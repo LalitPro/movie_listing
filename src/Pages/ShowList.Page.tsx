@@ -43,7 +43,7 @@ const ShowListPage: FC<ShowListPageProps> = ({
       />
       {loading || (!shows && <LoadingSpinner />)}
 
-      <div className="flex flex-wrap gap-4 px-3 sm:px-7 md:px-20">
+      <div className="flex flex-wrap items-center justify-center gap-4 px-3 sm:px-7 md:px-20">
         {shows && shows.map((show) => <ShowCard key={show.id} show={show} />)}
       </div>
     </div>
